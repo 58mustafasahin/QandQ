@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QandQ.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:QandQ.WebAPI.Controllers.AuthsController.Register(QandQ.Application.Features.Auths.Commands.RegisterUser.RegisterUserCommand)">
+            <summary>
+                Kullanıcı kayıt olur.
+            </summary>
+        </member>
+        <member name="M:QandQ.WebAPI.Controllers.AuthsController.Login(QandQ.Application.Features.Auths.Commands.LoginUser.LoginUserCommand)">
+            <summary>
+                Kullanıcı giriş yapar.
+            </summary>
+        </member>
+        <member name="M:QandQ.WebAPI.Controllers.MoviesController.GetAll(QandQ.Application.Features.Movies.Queries.GetAllMovie.GetAllMovieQuery)">
+            <summary>
+                Tüm filmleri getirir.
+            </summary>
+            <remarks>
+                Sayfalama ile istenilen sayfa ve istelen veri sayısı kadar film getirir.
+                Eğer bu veriler gönderilmezse başlangıç olarak 1.sayfadaki ilk 10 veri getirilir.
+            </remarks>      
+        </member>
+        <member name="M:QandQ.WebAPI.Controllers.MoviesController.GetById(QandQ.Application.Features.Movies.Queries.GetByIdMovie.GetByIdMovieQuery)">
+            <summary>
+                Film Id'ye göre detayları getirir.
+            </summary>
+        </member>
+        <member name="M:QandQ.WebAPI.Controllers.MoviesController.SuggestMovie(QandQ.Application.Features.Movies.Commands.SuggestMovie.SuggestMovieCommand)">
+            <summary>
+                Mail adresine film önerisi gönderir. !!!!! Not: Gmail artık güvensiz uygulamalara mail gönderimine izin vermiyor.
+            </summary>
+        </member>
+        <member name="M:QandQ.WebAPI.Controllers.RateAndNoteMoviesController.Create(QandQ.Application.Features.RateAndNoteMovies.Commands.CreateRateAndNoteMovie.CreateRateAndNoteMovieCommand)">
+            <summary>
+                Filmi oylanır ve not eklenir.
+            </summary>
+        </member>
+    </members>
+</doc>
